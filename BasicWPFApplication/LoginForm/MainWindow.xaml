@@ -1,0 +1,42 @@
+﻿<Window x:Class="LoginForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginForm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="450">
+    <Grid x:Name="grid1" Width="400" Height="300" Background="Gray">
+        <!--<Grid.Background>
+            <SolidColorBrush>
+                <SolidColorBrush.Color>
+                    <Color A="{Binding ElementName=slider1,Path=Value}"/>--><!--Binding cannot be set on A as its not dependency Property--><!--
+                </SolidColorBrush.Color>
+            </SolidColorBrush>
+        </Grid.Background>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0">Name :</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Width="250" Margin="0,5"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0">Password :</Label>
+        <PasswordBox Grid.Row="1" Grid.Column="1" Width="250" Margin="0,5"></PasswordBox>
+        <CheckBox x:Name="cb1" Grid.Row="2" Grid.Column="0">Remember Login</CheckBox>
+        <WrapPanel Grid.Row="2" Grid.Column="1">
+            <Button Margin="18,0, 0, 0" Content="Login" Background="Green" Foreground="White" IsEnabled="{Binding ElementName=cb1,Path=IsChecked}"/>
+            <Button Margin="15,0, 0, 0" Content="Reset" Background="Blue" Foreground="White" BorderBrush="Azure"/>
+        </WrapPanel>
+        <Slider x:Name="slider1" Background="Black" Grid.Row="3" Grid.ColumnSpan="2" Minimum="0" Maximum="100"
+                IsSnapToTickEnabled="True" ValueChanged="slider1_ValueChanged"/>
+
+
+    </Grid>
+</Window>

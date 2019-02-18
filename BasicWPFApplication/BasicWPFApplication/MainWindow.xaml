@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button Height="50" Width="100">
+            <StackPanel>
+                <Image></Image>
+                <TextBlock>
+                    <TextBlock.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Black" Offset="1"/>
+                            <GradientStop Color="Blue" Offset="0"/>
+                        </LinearGradientBrush>
+                    </TextBlock.Background>
+                </TextBlock>
+                <TextBlock>Button</TextBlock>
+            </StackPanel>
+        </Button>
     </Grid>
 </Window>
