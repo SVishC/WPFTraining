@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWPFApplication", "Basi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{193C29CE-D3E0-465C-98AE-992857DB262C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{CA92D9D0-38AB-43EF-A468-FDFBF338F073}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{193C29CE-D3E0-465C-98AE-992857DB262C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{193C29CE-D3E0-465C-98AE-992857DB262C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{193C29CE-D3E0-465C-98AE-992857DB262C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA92D9D0-38AB-43EF-A468-FDFBF338F073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA92D9D0-38AB-43EF-A468-FDFBF338F073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA92D9D0-38AB-43EF-A468-FDFBF338F073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA92D9D0-38AB-43EF-A468-FDFBF338F073}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

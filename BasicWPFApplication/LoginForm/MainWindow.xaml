@@ -34,9 +34,8 @@
             <Button Margin="18,0, 0, 0" Content="Login" Background="Green" Foreground="White" IsEnabled="{Binding ElementName=cb1,Path=IsChecked}"/>
             <Button Margin="15,0, 0, 0" Content="Reset" Background="Blue" Foreground="White" BorderBrush="Azure"/>
         </WrapPanel>
-        <Slider x:Name="slider1" Background="Black" Grid.Row="3" Grid.ColumnSpan="2" Minimum="0" Maximum="100"
+        <Slider x:Name="slider1" Grid.Row="3" Grid.ColumnSpan="2" Minimum="0" Maximum="100"
                 IsSnapToTickEnabled="True" ValueChanged="slider1_ValueChanged"/>
-
 
     </Grid>
 </Window>
